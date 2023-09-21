@@ -3,111 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gen-AI</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header id="header">
-      <div class="logo-section">
-        <img id="header-img" class="site-logo" src="./images/gen-ai logo.png" alt="company-logo">
-      </div>
-      <nav id="nav-bar" class="navigation-bar">
-        <ul style="list-style:none;" class="navigation">
-          <li><a class="nav-link" href="#gen-ai">Gen-AI</a></li>
-          <li><a class="nav-link" href="#story">Our Story</a></li>
-          <li><a class="nav-link" href="#designs">Designs</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <div class="container">
-        <section id="gen" class="cover-sect">
-          <div class="title-text">
-            <h1>Gen-AI</h1>
-            <p>FUTURISTIC ART ONE CLICK AWAY</p>
-          </div>
-          <div class="box-feature">
-            <img class="cover-image" src="./images/a-man-standing-in-a-magical-forest-in-peace-inside-upscaled (1).png" alt="Artistic image"/>
-          </div>
-        </section>
-        
-        <section id="story" class="story-sect">
-          <div class="section-text">
-            <h2>Our Story</h2>
-            <p>We have been creating visually appealing ai images for a long time and have many happy customers <br><br>Gen-AI was born to help others in picking the best.<br><br>We decided to create ai images to help others witness their imagination we can create anything you can think</p>
-          </div>
-          <div class="box-feature" id="im">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 
-            <img src="./images/girl leading army.png" />
+</head>
+<body> 
+    <nav id="desktop-nav">
+        <div class="logo">Anuj</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anuj</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <div class="wrapper">
+            <ul class="dynamic-txts">
+              <li><span>Anuj Yadav</span></li>
+              <li><span>Frontend Developer</span></li>
+              <li><span>Competitive Coder</span></li>
+            </ul>
           </div>
-        </section>
-        <section id="designs" class="samples">
-          <div class="section-text">
-            <h2>Featured</h2>
-            <p>Take a look at some of our featured picks that have made editorial debuts</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./images/resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
           </div>
-          <div class="featured">
-            <div class="cont">
-              <figure>
-                <img src="./images/man-living-in-harmony-with-the-aliens-upscaled.png" alt="human with aliens">
-              </figure>
-            </div>
-            
-            <div class="cont">
-              <figure>
-                <img src="./images/earth.jpeg" alt="earth">
-              </figure>
-            </div>
-            
-            <div class="cont">
-              <figure>
-                <img src="./images/nature-is-blooming-without-human-intervention-upscaled.png" alt="Nature">
-              </figure>
-            </div>
-            
+          <div id="socials-container">
+            <img
+              src="./images/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/anuj-yadav-8b88ba180/'"
+            />
+            <img
+              src="./images/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/anuj-210'"
+            />
           </div>
-        </section>
-        <section id="contact" class="contact-section">
-          <div class="section-text">
-            <h2>Get in touch</h2>
-            <p>We would love to hear from you! <br><br>If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address.</p>
-          </div>
-          <div class="contact-info">
-            <div class="form-box">
-              <form id="form" class="contact-form" action="">
-                <label for="name" class="form-entry">Name <br>
-                  <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp&nbsp;Enter name" required><br>
-                </label>
-                <label for="email" class="form-entry">Email <br>
-                  <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp&nbsp;Enter email" required><br>
-                </label>
-                <label for="message" class="form-entry">Message<br>
-                  <textarea name="message" id="message" type="textarea" class="txt-box" placeholder="&nbsp;Your valuable feedback"></textarea><br>
-                </label><br>
-                <input class="btn" id="submit" type="submit" value="Submit">
-              </form>
-            </div>
-          </div>
-        
-        </section>
-      </div>
+        </div>
+    </section>
     
-    </main>
-    <footer class="footer-section">
-      <div class="footer-info">
-        <ul style="list-style:none;">
-          <li><span>Privacy</span></li>
-          <li><span>Terms</span></li>
-          <li><span>Contact</span></li>
-        </ul>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Frontend Developer for more than 1 year and a competitive programmer. I also have strong hold over DSA.I've done a few projects on development. 
+            </p>
+          </div>
+        </div>
       </div>
-      <span class="personal-info">Created by Anuj with ❤️</span>
-      <span>Copyright 2023</span>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DSA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anuj885936@gmail.com">anuj885936@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Made with ❤️ All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
-    
-  </body>
-  
+</body>
 </html>
